@@ -1,0 +1,267 @@
+body {
+	background-image: linear-gradient(#2765a1, #245cab, #245cab, #ac0404, #ac0404, #00b9b9);
+}
+
+<!-- cor de fundo principal -->
+<!-- id vem com #, class com ".". Todos os dois são div. -->
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.fixa {
+  position: fixed;
+    margin: 0 45px;
+}
+nav{
+  margin-top: 10px;
+  background: #ccc;
+  display: flex;
+  justify-content: flex-end;
+}
+nav ul{
+  justify-content: space-between;
+  max-width: 800px;
+  display: none;
+}
+.icone {
+  display: block;
+  float: right;
+}
+
+/*menu mobile */
+nav.responsiva{
+	justify-content: space-between;
+}
+
+nav.responsiva ul{
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+}
+nav.responsiva ul li{
+	list-style-type: none;
+}
+nav.responsiva ul li a{
+	text-decoration: none;
+	font-size: 26px;
+	color: #000;
+	margin-left: 20px;
+}
+nav.responsiva ul li a:hover{
+	color: #f00;
+}
+
+.secao{
+	min-height: 600px;
+	padding-top: 90px;
+}
+
+
+@media screen and (min-width: 600px) {
+
+	nav.navegacao{
+		justify-content: space-between;
+	}
+
+	.container nav ul{
+		display: flex;
+		justify-content: space-between;
+		max-width: 800px;
+	}
+
+	nav ul li{
+		list-style-type: none;
+	}
+
+	nav ul li a{
+		text-decoration: none;
+		font-size: 26px;
+		color: #000;
+		margin-left: 20px;
+	}
+
+	nav ul li a:hover{
+		color: #f00;
+	}
+
+
+	.icone{
+		display: none;
+	}
+	
+
+}
+
+#local1 {
+	width: 1200px;
+	min-height: 900px;
+	margin: 0 auto;
+	border: 1px solid #ffffff;
+	background-image: linear-gradient(#245cab, #ffffff, #ffffff, #ffffff, #245cab);
+}
+
+#local2 {
+	width: 1200px;
+	min-height: 900px;
+	background-color: #b1a099;
+	float: center;
+	text-align: center;
+	margin: 0 auto;
+	background-color: #cccccc;
+	border: 1px solid #ffffff;
+	background-image: linear-gradient(#245cab, #ffffff, #ffffff, #ffffff, #ac0404);
+}
+
+#local3 {
+	width: 1200px;
+	min-height: 900px;
+	background-color: #b1a099;
+	float: center;
+	text-align: center;
+	margin: 0 auto;
+	background-color: #cccccc;
+	border: 1px solid #ffffff;
+	background-image: linear-gradient(#ac0404, #ffffff, #ffffff, #ffffff, #00b9b9);
+}
+
+#local4 {
+	width: 1200px;
+	min-height: 900px;
+	background-color: #b1a099;
+	float: center;
+	text-align: center;
+	margin: 0 auto;
+	background-color: #cccccc;
+	border: 1px solid #ffffff;
+	background-image: linear-gradient(#00b9b9, #ffffff, #ffffff, #ffffff, #ffffff, #00b9b9);
+}
+
+h1{
+	font-family:sans-serif;
+	font-size: 60px;
+}
+
+p{
+	font-family: arial;
+	color: black;
+	text-align: justify;
+	font-size: 18px;
+	float:center;
+    max-width:690px;
+    margin-left:250px;
+}
+
+#textalign{
+	text-align: center;
+}
+
+
+.borda_texto{
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #000;
+	font-size: 3em; color: #fffdd9;
+}
+
+#borda_texto2{
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: #000;
+	font-size: 3em; color: white;
+}
+
+#footer {
+	width: 960px;
+	height: 50px;
+	background-color: #999999;
+}
+
+.bolas {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	float: left;
+	border: 5px solid #ff00ff;
+}
+
+#bola1 {
+	background: #ff0000;
+	margin: 10px 20px 20px 30px;
+	padding: 4px 5px 3px 2px;
+}
+
+#bola2 {
+	background: #000000;
+	margin-top: 13px;
+	margin-right: 24px;
+	margin-bottom: 25px;
+	margin-left: 36px;
+}
+
+.wrapper {
+	width: 1200px;
+	min-height: 350px;
+	margin: 0 auto;
+	background-image: url(#2765a1);
+	background-size: cover;
+}
+
+#menu ul li {
+	float: left;
+	list-style-type: none;
+	margin: 5px;
+}
+
+#menu ul li a{
+	color: #000;
+	text-decoration: none;
+	background: #f4f4f4;
+	padding: 5px;
+}
+
+#menu ul li a:hover{
+	color: #FA8072;
+}
+
+#menu ul li ul {
+	width: 100px;
+	margin-left: -45px;
+	margin-top: 5px;
+}
+
+#menu ul li ul li {
+	display: none;
+	width: 300px;
+	margin-left: 0px;
+	margin-top: 5px;
+}
+
+#menu ul li:hover ul li {
+	display: block;
+}
+
+#animation{
+	width: 100px;
+	height: 100px;
+	background-color:;
+	position: relative;
+	animation-name: example;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;  
+}
+
+@keyframes example {
+  0%   {background-color:; left:0px; top:0px;}
+  25%  {background-color:; left:550px; top:0px;}
+  50%  {background-color:; left:1100px; top:0px;}
+  75%  {background-color:; left:550px; top:0px;}
+  100% {background-color:; left:0px; top:0px;}
+}
